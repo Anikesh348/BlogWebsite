@@ -54,6 +54,6 @@ app.post("/", function(req, res) {
     res.redirect("/")
 
 })
-app.listen(8100, function() {
+app.listen(process.env.PORT||8100, function() {
     console.log("READy!!");
 });
