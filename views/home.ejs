@@ -1,0 +1,15 @@
+<% include partials/header %>
+<h1>Hello</h1>
+<p>
+    <%=h1%>
+</p>
+<%for(var i = 0;i<newpost.length;i++){%>
+<h1>
+    <%=newpost[i].posttitle%>
+</h1>
+<p>
+    <%=newpost[i].postbody.substring(0,100)+"..."%>
+</p>
+<a href="/posts/<%=newpost[i].posttitle%>">Read more..</a>
+<%}%>
+<% include partials/footer %>
